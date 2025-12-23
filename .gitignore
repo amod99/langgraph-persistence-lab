@@ -1,0 +1,33 @@
+# --- Python / Jupyter ---
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Environments ---
+.env
+.venv
+venv/
+env/
+*.bak
+*.exe
+
+# --- SQLite & Data ---
+# We ignore the actual database files to prevent binary bloat and data leakage.
+# Users should generate their own local state when running your notebooks.
+*.db
+*.sqlite3
+*.sqlite3-journal
+
+# --- IDEs / Editors ---
+.vscode/
+.idea/
+.DS_Store
+
+# --- LangGraph Specifics ---
+# If using the LangGraph CLI or LangGraph Studio local server
+.langgraph_api/
+langgraph.json
